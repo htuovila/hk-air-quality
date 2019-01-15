@@ -4,6 +4,9 @@
 Created on Tue Jan 15 12:33:09 2019
 
 @author: htuovila
+Purpose of this script:
+    > to download Hong Kong air quality data that is available in
+    monthly csv-files online
 """
 
 # imports
