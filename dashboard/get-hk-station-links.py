@@ -3,9 +3,11 @@
 """
 Created on Wed Mar 20 12:30:51 2019
 
-@author: Heppa
+@author: htuovila
 """
 
+# Script to obtain HK environmental department air quality
+# website links and to save in file
 
 import requests
 from bs4 import BeautifulSoup
