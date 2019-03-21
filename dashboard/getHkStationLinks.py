@@ -13,7 +13,9 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-response = requests.get("http://www.aqhi.gov.hk/en/aqhi/past-24-hours-pollutant-concentration9c57.html")
+link="http://www.aqhi.gov.hk/en/aqhi/past-24-hours-pollutant-concentration9c57.html"
+
+response = requests.get(link)
 
 soup=BeautifulSoup(response.content,'html.parser')
 findings=soup.find_all('a',class_='stationList_item_a')
@@ -33,5 +35,6 @@ with open('hk_stations.csv', 'w') as csvFile:
     
 # next: get station locations (address, or lat/lon)
 # convert addresses to lat/lon readings
+    
     
     
