@@ -26,7 +26,7 @@ def getPollutantData():
     with open('hk_stations.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
-            print(row)
+            #print(row)
             station_name.append(row[0])
             station_link.append(row[1])
             
@@ -65,7 +65,7 @@ def getPollutantData():
         aqi_data[aqi_data.keys()[1:]]=data_array
         
         station_name=soup.find_all('div',id='dd_stnh24_stationName')[0].get_text()
-        print(station_name)
+        #print(station_name)
         # add station name
         aqi_data['station']=station_name
         return aqi_data

@@ -24,7 +24,7 @@ def getAqhiData():
     with open('hk_stations.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
-            print(row)
+            #print(row)
             station_name.append(row[0])
             station_link.append(row[1])
             station_aqhi_link.append(row[1].replace('pollutant-concentration','aqhi'))
